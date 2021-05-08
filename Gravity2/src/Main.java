@@ -154,7 +154,43 @@ public class Main {
 
         planet churyumov = new planet("Churyumov-Gerasimenko",4.01266*Math.pow(10,-8), churyumovMass, churyumovPos, churyumovVel);
 
-        planet[] allBodies = {mars, earth, venus, mercury,jupiter, saturn, psyche, tempel1, ceres, uranus, churyumov};
+        //Vesta: Updated May 7, 2021
+        BigDecimal[] vestaVel = {new BigDecimal(1.438754322734410*Math.pow(10,-3)/86400), new BigDecimal(-1.148546926358715*Math.pow(10,-2)/86400), new BigDecimal(1.683692789839975*Math.pow(10,-4)/86400)};
+
+        //uranPos is in AU
+        //form {x,y,z}s
+        BigDecimal[] vestaPos = {new BigDecimal(-2.263478874404683*Math.pow(10,0)),new BigDecimal(-9.135703176204282*Math.pow(10,-2)), new BigDecimal(2.781355534383398*Math.pow(10,-1))};
+
+        //mass of uranus in BigDecimal form
+        BigDecimal vestaMass = new BigDecimal(2.589*Math.pow(10,20));
+
+        planet vesta = new planet("Vesta",4.01266*Math.pow(10,-8), vestaMass, vestaPos, vestaVel);
+
+        //Hygiea: Updated May 7, 2021
+        BigDecimal[] hygieaVel = {new BigDecimal(-4.522511344559952*Math.pow(10,-3)/86400), new BigDecimal(-8.723930259145581*Math.pow(10,-3)/86400), new BigDecimal(-4.282220475804789*Math.pow(10,-4)/86400)};
+
+        //hygieaPos is in AU
+        //form {x,y,z}s
+        BigDecimal[] hygieaPos = {new BigDecimal(-2.570275680114862*Math.pow(10,0)),new BigDecimal(1.727481667425696*Math.pow(10,0)), new BigDecimal(-1.411707668195178*Math.pow(10,-1))};
+
+        //mass of hygiea in BigDecimal form
+        BigDecimal hygieaMass = new BigDecimal(8.67*Math.pow(10,19));
+
+        planet hygiea = new planet("Hygiea",4.01266*Math.pow(10,-8), hygieaMass, hygieaPos, hygieaVel);
+
+        //Bennu: Updated May 7, 2021
+        BigDecimal[] bennuVel = {new BigDecimal(-1.323152661619388*Math.pow(10,-2)/86400), new BigDecimal(1.428335023133081*Math.pow(10,-2)/86400), new BigDecimal(1.557832396694937*Math.pow(10,-3)/86400)};
+
+        //bennuPos is in AU
+        //form {x,y,z}s
+        BigDecimal[] bennuPos = {new BigDecimal(7.279236566986149*Math.pow(10,-1)),new BigDecimal(5.573341589817506*Math.pow(10,-1)), new BigDecimal(5.619134844824320*Math.pow(10,-2))};
+
+        //mass of hygiea in BigDecimal form
+        BigDecimal bennuMass = new BigDecimal(7.329*Math.pow(10,10));
+
+        planet bennu = new planet("Bennu",4.01266*Math.pow(10,-8), bennuMass, bennuPos, bennuVel);
+
+        planet[] allBodies = {mars, earth, venus, mercury,jupiter, saturn, psyche, tempel1, ceres, uranus, churyumov, vesta, hygiea, bennu};
 
         //make each planet a thread
 

@@ -14,9 +14,9 @@ public class planet extends Thread{
 
 
     //how many seconds the program will run
-    final int LengthOfSim = (int) (31536000*29.5);
+    final int LengthOfSim = (int) (31536000*40);
     //time step
-    final BigDecimal dt = new BigDecimal(20);
+    final BigDecimal dt = new BigDecimal(200);
 
     //Array list that stores the location of the planet over the course of the Simulation
     private ArrayList<BigDecimal[]> path = new ArrayList<BigDecimal[]>();

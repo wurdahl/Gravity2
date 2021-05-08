@@ -17,7 +17,7 @@ public class visualComponent extends JComponent{
     planet[] bodies;
 
     //The radial dimension of the frame in Astronomical Units.
-    BigDecimal Scaling = new BigDecimal(21);
+    BigDecimal Scaling = new BigDecimal(3);
 
 
     ArrayList<BigDecimal[]>[] bodyPathAU;
@@ -84,6 +84,12 @@ public class visualComponent extends JComponent{
                 g2.setColor(Color.blue);
             }else if(bodies[bindex].name.equals("Churyumov-Gerasimenko")){
                 g2.setColor(Color.LIGHT_GRAY);
+            }else if(bodies[bindex].name.equals("Vesta")){
+                g2.setColor(Color.green);
+            }else if(bodies[bindex].name.equals("Hygiea")){
+                g2.setColor(new Color(160,0,192));
+            }else if(bodies[bindex].name.equals("Bennu")){
+                g2.setColor(Color.pink);
             }
 
             length = bodyPathAU[bindex].size();
