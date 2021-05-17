@@ -17,7 +17,7 @@ public class visualComponent extends JComponent{
     planet[] bodies;
 
     //The radial dimension of the frame in Astronomical Units.
-    BigDecimal Scaling = new BigDecimal(3);
+    BigDecimal Scaling = new BigDecimal(21);
 
 
     ArrayList<BigDecimal[]>[] bodyPathAU;
